@@ -30,29 +30,29 @@ namespace wafer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.start = new System.Windows.Forms.Button();
-            this.pn = new System.Windows.Forms.Panel();
+            this.btn_start = new System.Windows.Forms.Button();
+            this.pn_wafer = new DPanel();
             this.tm_coating = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // start
+            // btn_start
             // 
-            this.start.Location = new System.Drawing.Point(146, 36);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(75, 23);
-            this.start.TabIndex = 0;
-            this.start.Text = "start";
-            this.start.UseVisualStyleBackColor = true;
-            this.start.Click += new System.EventHandler(this.btn_start_Click);
+            this.btn_start.Location = new System.Drawing.Point(146, 36);
+            this.btn_start.Name = "btn_start";
+            this.btn_start.Size = new System.Drawing.Size(75, 23);
+            this.btn_start.TabIndex = 0;
+            this.btn_start.Text = "start";
+            this.btn_start.UseVisualStyleBackColor = true;
+            this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
-            // pn
+            // pn_wafer
             // 
-            this.pn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn.Location = new System.Drawing.Point(84, 117);
-            this.pn.Name = "pn";
-            this.pn.Size = new System.Drawing.Size(200, 200);
-            this.pn.TabIndex = 1;
-            this.pn.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_wafer_Paint);
+            this.pn_wafer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pn_wafer.Location = new System.Drawing.Point(84, 117);
+            this.pn_wafer.Name = "pn_wafer";
+            this.pn_wafer.Size = new System.Drawing.Size(200, 200);
+            this.pn_wafer.TabIndex = 1;
+            this.pn_wafer.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_wafer_Paint);
             // 
             // tm_coating
             // 
@@ -63,8 +63,8 @@ namespace wafer
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 394);
-            this.Controls.Add(this.pn);
-            this.Controls.Add(this.start);
+            this.Controls.Add(this.pn_wafer);
+            this.Controls.Add(this.btn_start);
             this.Name = "Form1";
             this.Text = "wafer simulator";
             this.ResumeLayout(false);
@@ -73,8 +73,8 @@ namespace wafer
 
         #endregion
 
-        private System.Windows.Forms.Button start;
-        private System.Windows.Forms.Panel pn;
+        private System.Windows.Forms.Button btn_start;
+        private System.Windows.Forms.Panel pn_wafer;
         private System.Windows.Forms.Timer tm_coating;
     }
 }
