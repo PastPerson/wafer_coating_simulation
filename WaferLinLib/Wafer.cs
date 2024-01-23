@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace wafer
+namespace WaferLinLib
 {
-    class Wafer
+    public class Wafer
     {
         static int last_wn;
         readonly int wn;
@@ -27,7 +27,7 @@ namespace wafer
         }
         public bool Increment()
         {
-            if(now < 100)
+            if (now < 100)
             {
                 now++;
                 if (now == 100)
@@ -40,7 +40,7 @@ namespace wafer
         }
         public void coating(int quality)
         {
-            if(Now<100)
+            if (Now < 100)
             {
                 cells[Now] = quality;
             }
@@ -49,7 +49,7 @@ namespace wafer
         {
             get
             {
-                if((index < 0) || (index >= 100))
+                if ((index < 0) || (index >= 100))
                 {
                     return 0;//throw로 대체 가능
                 }
@@ -61,7 +61,7 @@ namespace wafer
             get
             {
                 int sum = 0;
-                foreach(int elem in cells)
+                foreach (int elem in cells)
                 {
                     sum += elem;
                 }

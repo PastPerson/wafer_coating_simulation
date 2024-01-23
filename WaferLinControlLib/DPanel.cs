@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//더블 버퍼링을 구현하기 위한 클래스
 
-namespace wafer
+namespace WaferLinControlLib
 {
-   public class DPanel:Panel
+    public class DPanel : Panel
     {
         public DPanel()
         {

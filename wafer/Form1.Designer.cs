@@ -1,4 +1,6 @@
 ﻿
+using WaferLinControlLib;
+
 namespace wafer
 {
     partial class Form1
@@ -31,7 +33,7 @@ namespace wafer
         {
             this.components = new System.ComponentModel.Container();
             this.btn_start = new System.Windows.Forms.Button();
-            this.pn_wafer = new DPanel();
+            this.pn_wafer = new WaferPanel();
             this.tm_coating = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -74,7 +76,7 @@ namespace wafer
         #endregion
 
         private System.Windows.Forms.Button btn_start;
-        private System.Windows.Forms.Panel pn_wafer;
+        private WaferPanel pn_wafer;
         private System.Windows.Forms.Timer tm_coating;
     }
 }
