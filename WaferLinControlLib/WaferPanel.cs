@@ -8,18 +8,31 @@ using WaferLinLib;
 
 namespace WaferLinControlLib
 {
+    /// <summary>
+    /// WaferPanel 클래스 - Wafer를 시각화하는 패널
+    /// </summary>
     public class WaferPanel:DPanel
     {
+        /// <summary>
+        /// Wafer 속성 - 가져오기 및 설정하기
+        /// </summary>
         public Wafer Wafer
         {
             get;
             set;
         }
+        /// <summary>
+        /// 기본 생성자
+        /// </summary>
         public WaferPanel()
         {
             this.Paint += WaferPanel_Paint;
         }
-    
+        /// <summary>
+        /// Paint 이벤트 핸들러 - Wafer의 품질 수준 시각화
+        /// </summary>
+        /// <param name="sender">이벤트 전송자</param>
+        /// <param name="e">이벤트 처리 인자</param>
         private void WaferPanel_Paint(object sender,System.Windows.Forms.PaintEventArgs e)
         {
             Graphics graphics = e.Graphics;

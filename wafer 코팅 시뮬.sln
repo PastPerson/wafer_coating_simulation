@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaferLinLib", "WaferLinLib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaferLinControlLib", "WaferLinControlLib\WaferLinControlLib.csproj", "{2C767F1B-CA8F-4CE7-8B91-31CC8F10991C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaferLine", "WaferLine\WaferLine.csproj", "{843F692D-CBD7-48BF-B84B-3CBF4A53853F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2C767F1B-CA8F-4CE7-8B91-31CC8F10991C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C767F1B-CA8F-4CE7-8B91-31CC8F10991C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C767F1B-CA8F-4CE7-8B91-31CC8F10991C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843F692D-CBD7-48BF-B84B-3CBF4A53853F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843F692D-CBD7-48BF-B84B-3CBF4A53853F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843F692D-CBD7-48BF-B84B-3CBF4A53853F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843F692D-CBD7-48BF-B84B-3CBF4A53853F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
